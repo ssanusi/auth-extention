@@ -34,6 +34,6 @@ export class AuthenticationController {
       secure: true,
       maxAge: 60 * 60 * 24 * 30,
     });
-    return accessToken ;
+    return accessToken;
   }
 }
