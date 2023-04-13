@@ -29,7 +29,6 @@ export class AccessTokenGuard implements CanActivate {
         token,
         this.jwtConfiguration,
       );
-      console.log({ decoded });
       request[REQUEST_USER_KEY] = decoded;
     } catch {
       throw new UnauthorizedException();
